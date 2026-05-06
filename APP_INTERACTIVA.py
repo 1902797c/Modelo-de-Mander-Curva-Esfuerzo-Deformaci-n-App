@@ -9,6 +9,26 @@ st.set_page_config(page_title="Modelo de Mander", layout="wide")
 # ─────────────────────────────────────────────────────────────────
 st.title("Modelo de Mander — Curva Esfuerzo-Deformación")
 st.caption("Marina Fierros Marcelo")
+st.markdown("""
+<style>
+
+/* Número grande */
+[data-testid="stMetricValue"] {
+    font-size: 16px;
+}
+
+/* Texto arriba */
+[data-testid="stMetricLabel"] {
+    font-size: 12px;
+}
+
+/* Delta */
+[data-testid="stMetricDelta"] {
+    font-size: 11px;
+}
+
+</style>
+""", unsafe_allow_html=True)
 
 # ─────────────────────────────────────────────────────────────────
 #  MATERIAL
