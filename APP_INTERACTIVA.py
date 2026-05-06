@@ -1,6 +1,7 @@
 import numpy as np
 import streamlit as st
 import matplotlib.pyplot as plt
+import pandas as pd
 from MODELO_MANDER import funcion_mander
 
 st.set_page_config(page_title="Modelo de Mander", layout="wide")
@@ -261,3 +262,14 @@ if st.sidebar.button("Generar curva"):
     plt.tight_layout()
 
     st.pyplot(fig)
+  
+df = pd.DataFrame({
+    "eps": eps,
+    "No_confinado": fc_no_conf,
+    "Confinado_est": fc_conf_est,
+    "Confinado_din": fc_conf_din})
+
+st.download_button(
+    "📥 Descargar resultados (CSV)",
+    df.to_csv(index=False),
+    file_name="curva_mander.csv")
