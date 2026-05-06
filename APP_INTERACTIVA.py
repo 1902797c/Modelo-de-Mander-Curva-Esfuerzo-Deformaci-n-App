@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from MODELO_MANDER import funcion_mander
 
-st.set_page_config(page_title="Modelo de Mander", layout="wide")
+st.set_page_config(page_title="Modelo de Mander", layout="wide", fontsize=30)
 
 # ─────────────────────────────────────────────────────────────────
 st.title("Modelo de Mander — Curva Esfuerzo-Deformación")
