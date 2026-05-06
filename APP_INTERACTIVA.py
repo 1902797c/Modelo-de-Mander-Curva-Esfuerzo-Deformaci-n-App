@@ -13,8 +13,7 @@ st.markdown("""
 <style>
 
 /* Número grande */
-[data-testid="stMetricValue"] {
-    font-size: 18px;}
+[data-testid="stMetricValue"] {font-size: 20px;}
 
 /* Texto arriba */
 [data-testid="stMetricLabel"] {font-size: 14px;}
