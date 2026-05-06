@@ -52,8 +52,11 @@ AREAS_VARILLA = {
 
 tipo = st.sidebar.selectbox(
     "Tipo de columna",
-    ["Circular con espiral", "Circular con estribos circulares", "Rectangular con estribos"])
-
+    ["Selecciona una opción",
+     "Circular con espiral",
+     "Circular con estribos circulares",
+     "Rectangular con estribos"]
+)
 # Inicialización para evitar NameError
 rho_s = s = ds = None
 b = h = c = Asx = Asy = wi = s_prima = None
