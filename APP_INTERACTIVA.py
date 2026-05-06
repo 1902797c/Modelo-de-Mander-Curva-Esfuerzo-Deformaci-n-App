@@ -263,13 +263,13 @@ if st.sidebar.button("Generar curva"):
 
     st.pyplot(fig)
   
-df = pd.DataFrame({
-    "eps": eps,
-    "No_confinado": fc_no_conf,
-    "Confinado_est": fc_conf_est,
-    "Confinado_din": fc_conf_din})
+    df = pd.DataFrame({
+        "eps": eps,
+        "No_confinado": fc_no_conf,
+        "Confinado_est": fc_conf_est,
+        "Confinado_din": fc_conf_din})
 
-st.download_button(
-    "📥 Descargar resultados (CSV)",
-    df.to_csv(index=False),
-    file_name="curva_mander.csv")
+    st.download_button(
+        "📥 Descargar resultados (CSV)",
+        df.to_csv(index=False),
+        file_name="curva_mander.csv")
