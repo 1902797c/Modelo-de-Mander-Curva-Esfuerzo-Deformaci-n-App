@@ -14,18 +14,13 @@ st.markdown("""
 
 /* Número grande */
 [data-testid="stMetricValue"] {
-    font-size: 16px;
-}
+    font-size: 18px;}
 
 /* Texto arriba */
-[data-testid="stMetricLabel"] {
-    font-size: 12px;
-}
+[data-testid="stMetricLabel"] {font-size: 14px;}
 
 /* Delta */
-[data-testid="stMetricDelta"] {
-    font-size: 11px;
-}
+[data-testid="stMetricDelta"] {font-size: 13px;}
 
 </style>
 """, unsafe_allow_html=True)
