@@ -289,7 +289,7 @@ if st.sidebar.button("Generar curva"):
         "Confinado_est": fc_conf_est,
         "Confinado_din": fc_conf_din})
     
-    st.dataframe(df.head(5))
+    st.dataframe(df, use_container_width=True, height=215)
     st.download_button(
         "📥 Descargar resultados (CSV)",
         df.to_csv(index=False),
