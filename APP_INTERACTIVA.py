@@ -144,8 +144,8 @@ if tipo == "Rectangular con estribos":
     varilla    = st.sidebar.selectbox("Varilla (estribo)", list(AREAS_VARILLA.keys()))
     area_barra = AREAS_VARILLA[varilla]
 
-    ramas_x = st.sidebar.number_input("Número de ramas en X", min_value=1.0, max_value=10.0, value=2.0, step=0.1, format="%.2f")
-    ramas_y = st.sidebar.number_input("Número de ramas en Y", min_value=1.0, max_value=10.0, value=2.0, step=0.1, format="%.2f")
+    ramas_x = st.sidebar.number_input("Número de ramas en X", min_value=1.0, max_value=10.0, value=ramas_x_default,, step=0.1, format="%.2f")
+    ramas_y = st.sidebar.number_input("Número de ramas en Y", min_value=1.0, max_value=10.0, value=ramas_y_default, step=0.1, format="%.2f")
 
     Asx = ramas_x * area_barra
     Asy = ramas_y * area_barra
